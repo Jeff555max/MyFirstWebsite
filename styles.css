@@ -1,0 +1,102 @@
+/* Общий стиль */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Имя и фамилия в верхнем левом углу */
+.name {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+/* Вертикальный текст YUDAEV */
+.vertical-text {
+  position: absolute;
+  left: 10px;
+  top: 380px;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+/* Центральный текст */
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Графика: контейнер с роботом */
+.robot-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.robot-image {
+  max-width: 100%;
+  max-height: 90%;
+  opacity: 0.8;
+}
+
+/* Круги с текстом */
+.circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.circle.first {
+  top: 40%;
+  left: 40%;
+}
+
+.circle.second {
+  top: 60%;
+  left: 45%;
+}
+
+/* Текст внизу */
+.footer-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  opacity: 0.8;
+}
